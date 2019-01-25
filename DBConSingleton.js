@@ -4,13 +4,14 @@ var DBConSingleton = (function() {
     var instance;
     function createInstance() {
         instance = mysql.createConnection({
-            host:"localhost",
+            host:"localhost:3306",
             username:"root",
-            password:"secret"
+            password:"123niab",
+            database: "stt_db"
         })
     }
     return {
-        getInstance: function(connString) {
+        getInstance: function() {
             if (!instance) instance = createInstance();
             return instance;     
         }
