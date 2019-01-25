@@ -19,19 +19,19 @@ dbConn.connect(function(err) {
 class Role {
 
     constructor(id, roleName) {
-     this.id = id;
-     this.roleName= roleName;
+     this._id = id;
+     this._roleName= roleName;
     }
     roleName() {
-        return this.roleName;
+        return this._roleName;
     }
     id() {
-        return this.id;
+        return this._id;
     }
 }
 
 var role =new Role(1, "ADMIN"); 
-console.log(role.roleName);
+console.log(role.roleName());
 
 //var ub = UserBuilder();
 //var role = UserBuilder.createRole(dbConn, { rolename :"ADMIN"});
