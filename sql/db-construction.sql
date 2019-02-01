@@ -6,8 +6,9 @@ create table roles (
 );
 create table users (
 	id int AUTO_INCREMENT PRIMARY KEY,
-	loginname varchar(10) NOT NULL,
+	username varchar(10) NOT NULL,
 	password varchar(255) NOT NULL,
+	enabled int NOT NULL,
 	role_id int NOT NULL,
 	FOREIGN KEY(role_id) REFERENCES roles(id)
 );
