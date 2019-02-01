@@ -2,7 +2,8 @@ use stt_db;
 
 create table authorities (
 	id int AUTO_INCREMENT PRIMARY KEY,
-	rolename varchar(50)
+	username varchar(50),
+	authority varchar(50)
 );
 create table users (
 	id int AUTO_INCREMENT PRIMARY KEY,
