@@ -1,6 +1,6 @@
 use stt_db;
 
-create table roles (
+create table authorities (
 	id int AUTO_INCREMENT PRIMARY KEY,
 	rolename varchar(50)
 );
