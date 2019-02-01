@@ -11,6 +11,6 @@ create table users (
 	password varchar(255) NOT NULL,
 	enabled int NOT NULL,
 	role_id int NOT NULL,
-	FOREIGN KEY(role_id) REFERENCES roles(id)
+	FOREIGN KEY(role_id) REFERENCES authorities(id)
 );
 
